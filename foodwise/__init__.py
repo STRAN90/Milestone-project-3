@@ -12,10 +12,8 @@ if os.environ.get("DEVELOPMENT") == "True":
     app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_URL")
 else:
     uri = os.environ.get("DATABASE_URL")
-    if uri and uri.startswith("postgres://"):
+    if uri.startswith("postgres://"):
         uri = uri.replace("postgres://", "postgresql://", 1)
-    elif uri is None:
-        raise RuntimeError("DATABASE_URL environment variable is not set.")
     app.config["SQLALCHEMY_DATABASE_URI"] = uri
 
 db = SQLAlchemy(app)
