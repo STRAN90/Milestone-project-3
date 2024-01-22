@@ -1,6 +1,7 @@
 from flask import render_template, request, redirect, url_for
 from werkzeug.security import generate_password_hash, check_password_hash
 from foodwise import app, db
+from foodwise.models import Category, Users
 
 @app.route("/")
 def home():
