@@ -7,14 +7,17 @@ body {
 /* logo */
 .logo-fork {
     height: 100%; 
-    width: 8%;
+    border-style:ridge; 
 }
 
 /* Navbar */
 .my-nav{
     height: 60px;
-    background-color: rgba(255, 255, 255);
     font-weight: 600;
+}
+
+.navbar-fixed nav {
+    background-color: #c8e6c9;
 }
 
 .my-btn {
@@ -31,27 +34,57 @@ nav ul a {
 }
 
 /* Hero */
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+}
 
 .hero {
     background-image: url("../images/hero.jpg");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     transition: ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     height: 100vh;
     width: 100%;
 }
+
+.row .col.s8 {
+    height: fit-content;
+}
+
 .hero-title {
     font-size: 2em;
     text-align: center;
     font-weight: bolder;
+    margin-top: 50px;
 }
 .hero-text {
     font-family: 'Roboto', sans serif;
     font-size: 1.5em;
+    margin-bottom: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: bold;
 }
 
 .card {
-    background-color: rgb(229, 231, 231);
+    background-color: rgb(237 202 219);
     height: 60%;
     width: fit-content;
+}
+
+/* Register/Sign in html */
+.row .col.offset-m2 {
+    background-color: cornsilk;
+}
+
+/* Footer */
+.page-footer {
+     padding-top: 0;
+}
+
+.page-footer .footer-copyright {
+    background-color: #79d97cdb;
+
 }
