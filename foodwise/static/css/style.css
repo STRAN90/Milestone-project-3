@@ -86,5 +86,10 @@ nav ul a {
 
 .page-footer .footer-copyright {
     background-color: #79d97cdb;
+}
 
+/*  Flash message */
+
+.flashes h5 {
+    margin-top: 2.5rem;
 }
