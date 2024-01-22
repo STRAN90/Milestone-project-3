@@ -15,7 +15,6 @@ else:
     if uri and uri.startswith("postgres://"):
         uri = uri.replace("postgres://", "postgresql://", 1)
     elif uri is None:
-        # Handle the case where 'uri' is None, provide a default value or raise an exception
         raise RuntimeError("DATABASE_URL environment variable is not set.")
     app.config["SQLALCHEMY_DATABASE_URI"] = uri
 
